@@ -37,7 +37,10 @@
         let lower = quote.toLowerCase();
         let firstLetter = lower.slice(0,1);
         let fixedQuote = lower.replace(firstLetter, firstLetter.toUpperCase());
-        
+
+        /*In fixedQuote, replace "green eggs and ham" with another food that you really don't like.*/
+
+        fixedQuote = fixedQuote.replace(fixedQuote.slice(fixedQuote.indexOf("g")), "pizza and burger");
 
         // Don't edit the code below here!
 
