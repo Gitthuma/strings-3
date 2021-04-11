@@ -32,6 +32,13 @@
 
         // Add your code here
 
+        /*Change the casing to correct sentence case (all lowercase, except for upper case first letter). Store the new quote in a variable called fixedQuote.*/
+
+        let lower = quote.toLowerCase();
+        let firstLetter = lower.slice(0,1);
+        let fixedQuote = lower.replace(firstLetter, firstLetter.toUpperCase());
+        
+
         // Don't edit the code below here!
 
         const section = document.querySelector('section');
